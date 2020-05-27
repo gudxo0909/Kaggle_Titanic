@@ -66,9 +66,11 @@ x_test.isnull().sum()
 
 x_train['Age'] = x_train['Age'].fillna(x_train['Age'].mean())
 x_train['Embarked_encode'] = x_train['Embarked_encode'].fillna(0)
+x_train.isnull().sum()
 
 x_test['Age'] = x_test['Age'].fillna(x_test['Age'].mean())
 x_test['Fare'] = x_test['Fare'].fillna(x_test['Fare'].mean())
+x_test.isnull().sum()
 
 # import machine learning module
 
