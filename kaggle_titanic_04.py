@@ -82,4 +82,4 @@ y_test = model.predict(x_test)
 
 submit = pd.read_csv('gender_submission.csv')
 y_test = submit['Survived']
-submit.to_csv('result_04', index = False)
+submit.to_csv('result_04.csv', index = False)
